@@ -1,0 +1,127 @@
+/* ========================================================================
+
+                                 VARIABLES
+
+===========================================================================*/
+
+:root {
+    --ideal-viewport-width: 1920;
+}
+
+/* ========================================================================
+
+                               DEFAULT STYLES
+
+===========================================================================*/
+
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(204, 239, 250);
+}
+
+/* ========================================================================
+
+                             NAVBAR STYLES
+
+===========================================================================*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5vmax;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: #FFFF;
+    box-shadow: 0px 3px 15px rgb(172, 172, 172);
+}
+
+.navbar * {
+    margin: 0;
+}
+
+.title-navbar {
+    font-size: calc(45 * 100vw / var(--ideal-viewport-width));
+    padding: 0.1vmax;
+    display: inline-flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.items-navbar {
+    display: inline-flex;
+    font-family: 'Open Sans';
+}
+
+.items-navbar h2{
+    margin-left: 3rem;
+}
+
+.gradient {
+    color: rgb(0, 89, 255);
+}
+
+.title-navbar :hover {
+    cursor: pointer;
+}
+
+.gradient:hover {
+    animation: gradients 1s 5 ease-out;
+}
+
+
+@keyframes gradients {
+    100% {color: rgb(33, 0, 219);}
+}
+
+.items-navbar h2:hover {
+    cursor: pointer;
+    color:salmon;
+}
+
+/* ========================================================================
+
+                             HERO STYLES
+
+===========================================================================*/
+
+.banner {
+    display: flex;
+    height: 85vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img {
+    flex-basis: 50%;
+    background-color: aquamarine;
+    height: 20vw;
+    color: aquamarine;
+}
+
+.title * {
+    margin: 0;
+}
+
+.title {
+    margin-left: 3vmax;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: calc(55 * 100vw / var(--ideal-viewport-width))
+}
+
+.title h1, .title h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ========================================================================
+
+                             SECTION STYLES
+
+=========================================================================== */
